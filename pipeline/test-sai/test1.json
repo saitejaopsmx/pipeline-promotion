@@ -1,0 +1,21 @@
+{
+ "application": "test-sai",
+ "id": "34799023-91b1-4fa0-b159-33863a1560f1",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": true,
+ "name": "test1",
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "name": "Wait",
+   "refId": "1",
+   "requisiteStageRefIds": [],
+   "type": "wait",
+   "waitTime": 10
+  }
+ ],
+ "triggers": [],
+ "updateTs": "1636620253000"
+}

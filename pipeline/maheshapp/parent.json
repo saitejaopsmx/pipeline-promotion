@@ -1,0 +1,27 @@
+{
+ "application": "maheshapp",
+ "id": "f1f824b1-61bd-4623-8685-572d0bc98827",
+ "index": 3,
+ "keepWaitingPipelines": true,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": false,
+ "name": "parent",
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "name": "Wait",
+   "refId": "4",
+   "requisiteStageRefIds": [],
+   "type": "wait",
+   "waitTime": 10
+  }
+ ],
+ "triggers": [
+  {
+   "enabled": true,
+   "source": "parent",
+   "type": "webhook"
+  }
+ ],
+ "updateTs": "1636627766000"
+}

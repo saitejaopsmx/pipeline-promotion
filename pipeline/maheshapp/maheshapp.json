@@ -1,0 +1,10 @@
+{
+ "cloudProviders": "kubernetes",
+ "email": "mahesh.kota@opsmx.io",
+ "instancePort": 80,
+ "lastModifiedBy": "admin",
+ "name": "maheshapp",
+ "trafficGuards": [],
+ "updateTs": "1636620334000",
+ "user": "admin"
+}

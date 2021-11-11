@@ -1,0 +1,39 @@
+{
+ "application": "maheshapp",
+ "id": "05c50f1f-245f-49f5-a17e-4349048bb1ca",
+ "index": 1,
+ "keepWaitingPipelines": true,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": true,
+ "name": "parent1",
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "name": "Wait",
+   "refId": "4",
+   "requisiteStageRefIds": [],
+   "type": "wait",
+   "waitTime": 5
+  },
+  {
+   "application": "maheshapp",
+   "failPipeline": true,
+   "name": "Pipeline",
+   "pipeline": "f6850476-0d6d-4742-9f1c-e862bf56b70a",
+   "refId": "5",
+   "requisiteStageRefIds": [
+    "4"
+   ],
+   "type": "pipeline",
+   "waitForCompletion": true
+  }
+ ],
+ "triggers": [
+  {
+   "enabled": true,
+   "source": "parent1",
+   "type": "webhook"
+  }
+ ],
+ "updateTs": "1636627604000"
+}

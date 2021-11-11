@@ -1,0 +1,10 @@
+{
+ "cloudProviders": "kubernetes",
+ "email": "saiteja.jatabhatina@opsmx.io",
+ "instancePort": 80,
+ "lastModifiedBy": "admin",
+ "name": "test-sai",
+ "trafficGuards": [],
+ "updateTs": "1636620252000",
+ "user": "admin"
+}

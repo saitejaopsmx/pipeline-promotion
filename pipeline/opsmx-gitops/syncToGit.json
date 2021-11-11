@@ -1,0 +1,41 @@
+{
+ "application": "opsmx-gitops",
+ "id": "7c6f98e1-1d38-418c-98d8-6a29f2c53b63",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": true,
+ "name": "syncToGit",
+ "parameterConfig": [
+  {
+   "default": "",
+   "description": "",
+   "hasOptions": false,
+   "label": "APPLICATIONNAME",
+   "name": "appname",
+   "options": [
+    {
+     "value": ""
+    }
+   ],
+   "pinned": false,
+   "required": false
+  }
+ ],
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "alias": "preconfiguredJob",
+   "name": "pipelineSyncToGit",
+   "parameters": {
+    "spinnaker_applications": "${parameters.appname}",
+    "spinnaker_pipelines": ""
+   },
+   "refId": "1",
+   "requisiteStageRefIds": [],
+   "type": "pipelineSyncToGit"
+  }
+ ],
+ "triggers": [],
+ "updateTs": "1636631343000"
+}

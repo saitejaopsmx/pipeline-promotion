@@ -1,0 +1,71 @@
+{
+ "application": "maheshapp",
+ "id": "453e49af-5843-4f9c-949c-b33fe2aa7780",
+ "index": 2,
+ "keepWaitingPipelines": true,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": true,
+ "name": "parent-parent",
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "method": "POST",
+   "name": "parent1",
+   "progressJsonPath": "$.buildInfo.progress",
+   "refId": "1",
+   "requisiteStageRefIds": [],
+   "statusJsonPath": "$.buildInfo.status",
+   "statusUrlResolution": "locationHeader",
+   "successStatuses": "SUCCESS",
+   "terminalStatuses": "TERMINAL",
+   "type": "webhook",
+   "url": "http://saiteja.oes-gate.310.opsmx.net/webhooks/webhook/parent",
+   "waitBeforeMonitor": "",
+   "waitForCompletion": false
+  },
+  {
+   "method": "POST",
+   "name": "parent2",
+   "progressJsonPath": "$.progress",
+   "refId": "2",
+   "requisiteStageRefIds": [],
+   "statusJsonPath": "$.status",
+   "statusUrlResolution": "locationHeader",
+   "successStatuses": "success",
+   "terminalStatuses": "terminal",
+   "type": "webhook",
+   "url": "http://saiteja.oes-gate.310.opsmx.net/webhooks/webhook/parent",
+   "waitBeforeMonitor": "",
+   "waitForCompletion": false
+  },
+  {
+   "method": "POST",
+   "name": "parent3",
+   "refId": "3",
+   "requisiteStageRefIds": [],
+   "statusUrlResolution": "getMethod",
+   "type": "webhook",
+   "url": "http://saiteja.oes-gate.310.opsmx.net/webhooks/webhook/parent"
+  },
+  {
+   "method": "POST",
+   "name": "parent4",
+   "refId": "4",
+   "requisiteStageRefIds": [],
+   "statusUrlResolution": "getMethod",
+   "type": "webhook",
+   "url": "http://saiteja.oes-gate.310.opsmx.net/webhooks/webhook/parent"
+  },
+  {
+   "method": "POST",
+   "name": "parent5",
+   "refId": "5",
+   "requisiteStageRefIds": [],
+   "statusUrlResolution": "getMethod",
+   "type": "webhook",
+   "url": "http://saiteja.oes-gate.310.opsmx.net/webhooks/webhook/parent"
+  }
+ ],
+ "triggers": [],
+ "updateTs": "1636627389000"
+}
