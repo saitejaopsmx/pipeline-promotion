@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows the jenkins job will trigger the spinnaker pipelines and deploys the manifest based on properties from jenkins build. Requirements- Need to integrate jenkins account in spinnaker.",
- "id": "59b59eb9-d8b8-4a9f-8c28-52a95c53b3a7",
+ "id": "860bd89c-0048-4662-adc6-34a9b468b693",
  "index": 14,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -91,5 +91,5 @@
    "type": "jenkins"
   }
  ],
- "updateTs": "1636618577000"
+ "updateTs": "1636706450000"
 }

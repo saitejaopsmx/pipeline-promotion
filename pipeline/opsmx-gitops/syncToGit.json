@@ -9,16 +9,16 @@
  "parameterConfig": [
   {
    "default": "",
-   "description": "",
+   "description": "Application name",
    "hasOptions": false,
-   "label": "APPLICATIONNAME",
-   "name": "appname",
+   "label": "APPLICATION",
+   "name": "application",
    "options": [
     {
      "value": ""
     }
    ],
-   "pinned": false,
+   "pinned": true,
    "required": false
   }
  ],
@@ -28,7 +28,7 @@
    "alias": "preconfiguredJob",
    "name": "pipelineSyncToGit",
    "parameters": {
-    "spinnaker_applications": "${parameters.appname}",
+    "spinnaker_applications": "${parameters.application}",
     "spinnaker_pipelines": ""
    },
    "refId": "1",
@@ -37,5 +37,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636631343000"
+ "updateTs": "1636715472000"
 }

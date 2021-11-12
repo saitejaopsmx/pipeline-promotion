@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows  jira trigger and deploys manifest according to the jira id states.",
- "id": "9cd65eab-5370-49ab-839f-760b48587f23",
+ "id": "101d25f6-fde9-4fee-90fa-d8ba0de0fcc8",
  "index": 15,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -154,5 +154,5 @@
    "type": "webhook"
   }
  ],
- "updateTs": "1636618565000"
+ "updateTs": "1636706438000"
 }

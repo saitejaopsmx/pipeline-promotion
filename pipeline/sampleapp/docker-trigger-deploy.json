@@ -2,7 +2,7 @@
  "application": "sampleapp",
  "description": "This sample pipeline shows the docker registry auto trigger and deploys manifest to kubernetes by fetching the artifact from github.",
  "expectedArtifacts": [],
- "id": "4cfa0a7a-c600-4e22-bb49-1819434efdd5",
+ "id": "2fffb2a1-24f8-4ed6-a184-6cd476883fe1",
  "index": 8,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -48,5 +48,5 @@
    "type": "docker"
   }
  ],
- "updateTs": "1636618558000"
+ "updateTs": "1636706431000"
 }

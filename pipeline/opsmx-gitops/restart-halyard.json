@@ -1,7 +1,7 @@
 {
  "application": "opsmx-gitops",
  "description": "Restart halyard to apply the changes when using gitOps. This pipeline can be automatically triggered using github webhook as well.",
- "id": "cc6e64e5-2153-4c9b-a774-70f89473299f",
+ "id": "265dcde9-0b35-4a2c-8509-e5edee4f2090",
  "index": 2,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -45,5 +45,5 @@
    "type": "webhook"
   }
  ],
- "updateTs": "1636618575000"
+ "updateTs": "1636706448000"
 }

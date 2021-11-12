@@ -2,7 +2,7 @@
  "application": "sampleapp",
  "description": "This pipeline shows the Kayenta canary analysis. It analysis the metrics for canary release against baseline.",
  "expectedArtifacts": [],
- "id": "c25497f1-f43a-4e05-b554-f27a95383a1e",
+ "id": "4e804447-c189-41bd-abf3-1b8f4c4f0515",
  "index": 18,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -349,5 +349,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618570000"
+ "updateTs": "1636706442000"
 }

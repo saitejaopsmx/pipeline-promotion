@@ -2,7 +2,7 @@
  "application": "sampleapp",
  "description": "This sample pipeline shows the Github auto trigger and deploys manifest to kubernetes by fetching the artifact from github",
  "expectedArtifacts": [],
- "id": "ce667631-92bb-4719-a93b-d0a9f366b479",
+ "id": "17cd10c5-71b3-4807-a409-978a776627ef",
  "index": 9,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -48,5 +48,5 @@
    "type": "git"
   }
  ],
- "updateTs": "1636618556000"
+ "updateTs": "1636706429000"
 }

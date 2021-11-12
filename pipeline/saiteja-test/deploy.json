@@ -1,0 +1,146 @@
+{
+ "application": "saiteja-test",
+ "id": "bf65de89-c8f1-4134-836c-55960142aa3f",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "admin",
+ "limitConcurrent": true,
+ "name": "deploy",
+ "parameterConfig": [
+  {
+   "default": "",
+   "description": "The namespace to deploy",
+   "hasOptions": false,
+   "label": "value",
+   "name": "namespace",
+   "options": [
+    {
+     "value": ""
+    }
+   ],
+   "pinned": false,
+   "required": true
+  }
+ ],
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "account": "default",
+   "cloudProvider": "kubernetes",
+   "manifestArtifact": {
+    "artifactAccount": "custom-artifact",
+    "customKind": true,
+    "id": "cdd8a537-d478-4401-a830-968904f550bf",
+    "type": "custom/object"
+   },
+   "manifests": [
+    {
+     "apiVersion": "apps/v1",
+     "kind": "Deployment",
+     "metadata": {
+      "name": "patch-demo"
+     },
+     "spec": {
+      "replicas": 2,
+      "selector": {
+       "matchLabels": {
+        "app": "nginx"
+       }
+      },
+      "template": {
+       "metadata": {
+        "labels": {
+         "app": "nginx"
+        }
+       },
+       "spec": {
+        "containers": [
+         {
+          "image": "nginx",
+          "name": "patch-demo-ctr"
+         }
+        ],
+        "tolerations": [
+         {
+          "effect": "NoSchedule",
+          "key": "dedicated",
+          "value": "test-team"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ],
+   "moniker": {
+    "app": "saiteja-test"
+   },
+   "name": "Deploy (Manifest)",
+   "namespaceOverride": "",
+   "notifications": [
+    {
+     "address": "saiteja.katabhatina@opsmx.io",
+     "level": "stage",
+     "type": "email",
+     "when": [
+      "stage.starting",
+      "stage.complete",
+      "stage.failed"
+     ]
+    }
+   ],
+   "refId": "1",
+   "requisiteStageRefIds": [],
+   "sendNotifications": true,
+   "skipExpressionEvaluation": false,
+   "source": "text",
+   "trafficManagement": {
+    "enabled": false,
+    "options": {
+     "enableTraffic": false,
+     "services": []
+    }
+   },
+   "type": "deployManifest"
+  },
+  {
+   "name": "Wait",
+   "refId": "2",
+   "requisiteStageRefIds": [
+    "1"
+   ],
+   "type": "wait",
+   "waitTime": 3
+  },
+  {
+   "failPipeline": true,
+   "instructions": "Proceed for deletion",
+   "judgmentInputs": [],
+   "name": "Manual Judgment",
+   "notifications": [],
+   "refId": "3",
+   "requisiteStageRefIds": [
+    "2"
+   ],
+   "type": "manualJudgment"
+  },
+  {
+   "account": "default",
+   "app": "saiteja-test",
+   "cloudProvider": "kubernetes",
+   "manifestName": "deployment patch-demo",
+   "mode": "static",
+   "name": "Delete (Manifest)",
+   "options": {
+    "cascading": true
+   },
+   "refId": "4",
+   "requisiteStageRefIds": [
+    "3"
+   ],
+   "type": "deleteManifest"
+  }
+ ],
+ "triggers": [],
+ "updateTs": "1636714638000"
+}

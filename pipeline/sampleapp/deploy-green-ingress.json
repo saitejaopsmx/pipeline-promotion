@@ -2,7 +2,7 @@
  "appConfig": {},
  "application": "sampleapp",
  "description": "This sample pipeline shows green deployment, where green deployment happens and validates Ingress based traffic and decides to rollback to blue or to retain green",
- "id": "cd3cb996-ab7c-4945-95f1-1364d74ce407",
+ "id": "e155e9a6-dad6-4b1a-b29f-29836319618c",
  "index": 7,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -357,5 +357,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618567000"
+ "updateTs": "1636706440000"
 }

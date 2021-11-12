@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows blue-green deployment with Ingress based traffic handling.",
- "id": "9b408c4b-e021-4451-af97-5f7c6b1f1451",
+ "id": "85cb22d9-4e5d-4f07-8940-eb04b7438b8c",
  "index": 5,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -128,5 +128,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618568000"
+ "updateTs": "1636706441000"
 }

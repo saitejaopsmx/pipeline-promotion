@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows the Ingress based blue deployment.",
- "id": "538e25fc-85a6-4cad-a8b9-5f96c8d39a5e",
+ "id": "5c29c12c-571c-4e12-b45b-2098ae6bb76d",
  "index": 6,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -162,5 +162,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618566000"
+ "updateTs": "1636706439000"
 }

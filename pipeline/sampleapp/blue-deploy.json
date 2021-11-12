@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows the blue-green deployment, Only blue deployment can be seen where the artifact is from github",
- "id": "1662e81b-7cf6-40fd-8ca6-bae993dc0f81",
+ "id": "df9d0652-6d2a-4d61-8979-66d93de61020",
  "index": 4,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -128,5 +128,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618563000"
+ "updateTs": "1636706435000"
 }

@@ -1,7 +1,7 @@
 {
  "application": "sampleapp",
  "description": "This sample pipeline shows blue-green kubernetes deployment, where green deployment happens and validates traffic and decides to rolback to blue or retains green.",
- "id": "de35d292-b626-4812-9bc8-a09b59de8ffa",
+ "id": "84487bbc-578f-4b77-bd02-ccee5aca6737",
  "index": 10,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "admin",
@@ -312,5 +312,5 @@
   }
  ],
  "triggers": [],
- "updateTs": "1636618564000"
+ "updateTs": "1636706436000"
 }
